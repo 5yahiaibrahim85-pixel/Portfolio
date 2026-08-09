@@ -1,0 +1,2569 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yahia Ibrahim — Networks & Cybersecurity student in Banha, Egypt, building practical expertise across networking, security, and intelligent infrastructure.">
+  <meta name="keywords" content="Yahia Ibrahim, cybersecurity, networking, Cisco, Linux, Python, Egypt, portfolio">
+  <meta name="author" content="Yahia Ibrahim">
+  <meta property="og:title" content="Yahia Ibrahim | Networks & Cybersecurity">
+  <meta property="og:description" content="Portfolio of Yahia Ibrahim — a Networks & Cybersecurity student building practical expertise across networking, security, and intelligent infrastructure.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yahia Ibrahim | Networks & Cybersecurity">
+  <meta name="twitter:description" content="Portfolio of Yahia Ibrahim — a Networks & Cybersecurity student building practical expertise across networking, security, and intelligent infrastructure.">
+  <title>Yahia Ibrahim | Networks & Cybersecurity</title>
+
+  <!-- Major change: lightweight monogram icons; replace with supplied artwork later if desired. -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2302040a'/%3E%3Cpath d='M14 15h9l9 15 9-15h9L36 38v11h-8V38L14 15Z' fill='%2322d3ee'/%3E%3Ccircle cx='48' cy='48' r='4' fill='%23f8fafc'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%2302040a'/%3E%3Cpath d='M40 42h27l23 40 23-40h27l-36 59v37H76v-37L40 42Z' fill='%2322d3ee'/%3E%3Ccircle cx='133' cy='132' r='10' fill='%23f8fafc'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Major change: minimal Person schema using only existing portfolio facts. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yahia Ibrahim",
+    "jobTitle": "Networks & Cybersecurity student",
+    "description": "Networks and Cybersecurity student at WE School for Applied Technology in Banha, Egypt, building practical skills in networking, security, Python, and embedded IoT.",
+    "email": "mailto:2yahia.ibrahim85@gmail.com",
+    "telephone": "+20 110 503 5763",
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Banha, Qalyubia, Egypt"
+    },
+    "sameAs": [
+      "https://github.com/yahiaibrahim85",
+      "https://www.linkedin.com/in/yahia-ibrahim-2404232a9"
+    ]
+  }
+  </script>
+
+  <style>
+    /*
+      ==========================================================================
+      Design tokens — retained and extended as the single source of truth.
+      Contrast note: gray-400 and gray-500 are intentionally brighter than the
+      previous version so body copy and labels meet WCAG AA on the navy surfaces.
+      ==========================================================================
+    */
+    :root {
+      --navy-950: #02040a;
+      --navy-900: #060b14;
+      --navy-850: #0a1020;
+      --navy-800: #0f172a;
+      --navy-700: #1e293b;
+      --navy-600: #334155;
+      --navy-500: #475569;
+      --carbon: #050508;
+      --white: #f8fafc;
+      --gray-50: #f1f5f9;
+      --gray-100: #e2e8f0;
+      --gray-200: #d5dfeb;
+      --gray-300: #c2cfde;
+      --gray-400: #b1c0d1;
+      --gray-500: #96a8bc;
+      --cyan-300: #67e8f9;
+      --cyan-400: #22d3ee;
+      --cyan-500: #06b6d4;
+      --cyan-600: #0891b2;
+      --cyan-700: #0e7490;
+      --cyan-glow: rgba(6, 182, 212, 0.12);
+      --glass-bg: rgba(15, 23, 42, 0.62);
+      --glass-bg-2: rgba(15, 23, 42, 0.78);
+      --glass-border: rgba(177, 192, 209, 0.12);
+      --glass-border-2: rgba(177, 192, 209, 0.2);
+      --glass-border-hover: rgba(34, 211, 238, 0.48);
+      --glass-highlight: rgba(255, 255, 255, 0.07);
+      --hairline: rgba(177, 192, 209, 0.16);
+      --surface-raised: rgba(15, 23, 42, 0.9);
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
+      --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.28);
+      --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.38);
+      --shadow-glow: 0 18px 50px rgba(6, 182, 212, 0.16);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-xl: 26px;
+      --radius-2xl: 34px;
+      --space-3xs: 0.25rem;
+      --space-2xs: 0.5rem;
+      --space-xs: 0.75rem;
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2.5rem;
+      --space-xl: 4rem;
+      --space-2xl: 6.5rem;
+      --container: 1524px;
+      --transition-fast: 160ms ease;
+      --transition-base: 260ms cubic-bezier(0.2, 0.7, 0.2, 1);
+      --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 6rem;
+      background: var(--navy-950);
+      scrollbar-color: var(--navy-600) var(--navy-900);
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 15% -10%, rgba(6, 182, 212, 0.1), transparent 28rem),
+        var(--navy-950);
+      color: var(--gray-200);
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    ::selection {
+      background: var(--cyan-400);
+      color: var(--navy-950);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--cyan-300);
+      outline-offset: 4px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 10001;
+      top: 0.8rem;
+      left: 0.8rem;
+      padding: 0.7rem 1rem;
+      transform: translateY(-180%);
+      border-radius: var(--radius-sm);
+      background: var(--white);
+      color: var(--navy-950);
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform var(--transition-fast);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - clamp(3.5rem, 9.3vw, 9.75rem)));
+      margin-inline: auto;
+    }
+
+    .section {
+      position: relative;
+      padding-block: var(--space-2xl);
+      scroll-margin-top: 5.5rem;
+    }
+
+    .section--surface {
+      background: linear-gradient(135deg, rgba(10, 16, 32, 0.92), rgba(6, 11, 20, 0.98));
+    }
+
+    .section--deep {
+      background: var(--navy-950);
+    }
+
+    .section__rule {
+      position: absolute;
+      inset: 0 0 auto;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--hairline), transparent);
+    }
+
+    .section__rule--cyan {
+      background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.5), transparent);
+    }
+
+    .section-heading {
+      max-width: 45rem;
+      margin-bottom: var(--space-xl);
+    }
+
+    .section-heading__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      margin: 0 0 var(--space-sm);
+      color: var(--cyan-300);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.74rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .section-heading__eyebrow::before {
+      width: 2rem;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .section-heading__title {
+      margin: 0;
+      color: var(--white);
+      font-size: clamp(2rem, 4vw, 3.35rem);
+      font-weight: 800;
+      letter-spacing: -0.055em;
+      line-height: 1.06;
+    }
+
+    .section-heading__accent {
+      color: var(--cyan-400);
+    }
+
+    .section-heading__description {
+      max-width: 39rem;
+      margin: var(--space-md) 0 0;
+      color: var(--gray-400);
+      font-size: 1.04rem;
+      line-height: 1.7;
+    }
+
+    /*
+      ==========================================================================
+      Major change: fast, progressive loading indicator. It is under 600 ms on
+      a first visit and removed immediately for the rest of the browser session.
+      ==========================================================================
+    */
+    .site-loader {
+      position: fixed;
+      z-index: 10000;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      background: var(--navy-950);
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 180ms ease, visibility 180ms ease;
+    }
+
+    .site-loader--hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .site-loader__mark {
+      display: grid;
+      width: 4.5rem;
+      aspect-ratio: 1;
+      place-items: center;
+      border: 1px solid var(--glass-border-2);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-glow);
+      color: var(--cyan-400);
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+
+    /*
+      ==========================================================================
+      Major change: Y. monogram system. The editorial mark differentiates the
+      visual identity without changing the navy/cyan palette.
+      ==========================================================================
+    */
+    .site-header {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      right: 0;
+      left: 0;
+      border-bottom: 1px solid transparent;
+      transition: background var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .site-header--scrolled {
+      border-color: var(--hairline);
+      background: rgba(2, 4, 10, 0.86);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.26);
+      backdrop-filter: blur(20px);
+    }
+
+    .nav {
+      display: flex;
+      min-height: 5.25rem;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.78rem;
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .brand__mark {
+      position: relative;
+      display: grid;
+      width: 2.25rem;
+      height: 2.25rem;
+      place-items: center;
+      overflow: hidden;
+      border: 1px solid rgba(34, 211, 238, 0.54);
+      border-radius: 9px 2px 9px 2px;
+      color: var(--cyan-400);
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.1em;
+      line-height: 1;
+    }
+
+    .brand__mark::after {
+      position: absolute;
+      right: 0.25rem;
+      bottom: 0.24rem;
+      width: 0.28rem;
+      height: 0.28rem;
+      border-radius: 50%;
+      background: var(--white);
+      content: "";
+    }
+
+    .brand__name {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+    }
+
+    .brand__descriptor {
+      display: block;
+      margin-top: 0.16rem;
+      color: var(--gray-500);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.58rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 0.1rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav__link {
+      display: inline-flex;
+      padding: 0.58rem 0.75rem;
+      border-radius: 999px;
+      color: var(--gray-400);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.015em;
+      text-decoration: none;
+      transition: color var(--transition-fast), background var(--transition-fast);
+    }
+
+    .nav__link:hover,
+    .nav__link[aria-current="true"] {
+      background: rgba(34, 211, 238, 0.09);
+      color: var(--white);
+    }
+
+    .nav__toggle {
+      display: none;
+      width: 2.7rem;
+      height: 2.7rem;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-sm);
+      background: var(--glass-bg);
+      color: var(--white);
+      cursor: pointer;
+    }
+
+    .nav__toggle-icon,
+    .nav__toggle-icon::before,
+    .nav__toggle-icon::after {
+      display: block;
+      width: 1.1rem;
+      height: 2px;
+      border-radius: 999px;
+      background: currentColor;
+      content: "";
+      transition: transform var(--transition-fast), opacity var(--transition-fast);
+    }
+
+    .nav__toggle-icon {
+      position: relative;
+    }
+
+    .nav__toggle-icon::before {
+      position: absolute;
+      top: -0.38rem;
+    }
+
+    .nav__toggle-icon::after {
+      position: absolute;
+      top: 0.38rem;
+    }
+
+    .nav__toggle[aria-expanded="true"] .nav__toggle-icon {
+      background: transparent;
+    }
+
+    .nav__toggle[aria-expanded="true"] .nav__toggle-icon::before {
+      transform: translateY(0.38rem) rotate(45deg);
+    }
+
+    .nav__toggle[aria-expanded="true"] .nav__toggle-icon::after {
+      transform: translateY(-0.38rem) rotate(-45deg);
+    }
+
+    /*
+      ==========================================================================
+      Hero and conversion actions
+      ==========================================================================
+    */
+    .hero {
+      position: relative;
+      display: grid;
+      min-height: min(50rem, 100svh);
+      padding-top: 5.25rem;
+      overflow: clip;
+      background:
+        radial-gradient(ellipse 80% 56% at 10% 35%, rgba(6, 182, 212, 0.15), transparent 64%),
+        radial-gradient(ellipse 56% 46% at 87% 74%, rgba(34, 211, 238, 0.07), transparent 70%),
+        var(--navy-950);
+    }
+
+    .hero::before {
+      position: absolute;
+      z-index: 0;
+      inset: 0;
+      opacity: 0.24;
+      background-image:
+        linear-gradient(rgba(177, 192, 209, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(177, 192, 209, 0.05) 1px, transparent 1px);
+      background-size: 6rem 6rem;
+      mask-image: radial-gradient(ellipse 76% 66% at 50% 45%, black, transparent 78%);
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero__layout {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(24rem, 0.9fr);
+      align-items: center;
+      gap: clamp(2.5rem, 5.5vw, 5.75rem);
+      padding-block: clamp(3.25rem, 6vw, 5.75rem);
+    }
+
+    .hero__copy {
+      max-width: 42rem;
+      justify-self: start;
+    }
+
+    .hero__availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin: 0 0 var(--space-md);
+      padding: 0.48rem 0.76rem;
+      border: 1px solid rgba(103, 232, 249, 0.28);
+      border-radius: 999px;
+      background: rgba(6, 182, 212, 0.08);
+      color: var(--cyan-300);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .hero__availability::before {
+      width: 0.42rem;
+      height: 0.42rem;
+      border-radius: 50%;
+      background: var(--cyan-400);
+      box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.11);
+      content: "";
+    }
+
+    .hero__title {
+      max-width: 48rem;
+      margin: 0;
+      color: var(--white);
+      font-size: clamp(3.15rem, 6.6vw, 5.75rem);
+      font-weight: 800;
+      letter-spacing: -0.07em;
+      line-height: 0.96;
+    }
+
+    .hero__title-accent {
+      color: var(--cyan-400);
+    }
+
+    .hero__summary {
+      max-width: 42rem;
+      margin: var(--space-md) 0 0;
+      color: var(--gray-300);
+      font-size: clamp(1rem, 1.9vw, 1.18rem);
+      line-height: 1.7;
+    }
+
+    .hero__core {
+      width: min(100%, 34.25rem);
+      margin: clamp(1.65rem, 3vw, 2.15rem) 0 var(--space-lg);
+    }
+
+    .hero__core-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(0.65rem, 1.3vw, 1rem);
+      margin: 0 0 0.75rem;
+      color: var(--white);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .hero__core-line {
+      position: relative;
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--cyan-400), rgba(34, 211, 238, 0.16));
+    }
+
+    .hero__core-line--right {
+      background: linear-gradient(90deg, rgba(34, 211, 238, 0.16), var(--cyan-400));
+    }
+
+    .hero__core-line::after {
+      position: absolute;
+      top: 50%;
+      width: 0.36rem;
+      height: 0.36rem;
+      border-radius: 50%;
+      background: var(--cyan-400);
+      box-shadow: 0 0 12px rgba(34, 211, 238, 0.88);
+      content: "";
+      transform: translateY(-50%);
+    }
+
+    .hero__core-line--left::after {
+      right: 0;
+    }
+
+    .hero__core-line--right::after {
+      left: 0;
+    }
+
+    .hero__focus-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 10.75rem));
+      justify-content: start;
+      gap: clamp(0.65rem, 1.2vw, 1rem);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .hero__focus-item {
+      position: relative;
+      display: flex;
+      min-height: 6.25rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.42rem;
+      padding: 0.6rem;
+      overflow: hidden;
+      border: 1px solid rgba(103, 232, 249, 0.19);
+      border-radius: 0.9rem;
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.94), rgba(6, 11, 20, 0.76));
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.045);
+      color: var(--gray-200);
+      isolation: isolate;
+      transition: transform var(--transition-base), border-color var(--transition-fast), box-shadow var(--transition-base);
+    }
+
+    .hero__focus-item::before {
+      position: absolute;
+      z-index: -1;
+      top: -3.5rem;
+      right: -2.75rem;
+      width: 7.5rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(34, 211, 238, 0.17), transparent 68%);
+      content: "";
+      transition: transform var(--transition-base);
+    }
+
+    .hero__focus-item::after {
+      position: absolute;
+      right: 0.85rem;
+      bottom: 0;
+      left: 0.85rem;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--cyan-400), transparent);
+      content: "";
+      opacity: 0.74;
+    }
+
+    .hero__focus-item:hover {
+      transform: translateY(-4px);
+      border-color: rgba(103, 232, 249, 0.5);
+      box-shadow: 0 17px 34px rgba(0, 0, 0, 0.26), 0 0 22px rgba(6, 182, 212, 0.08);
+    }
+
+    .hero__focus-item:hover::before {
+      transform: scale(1.24);
+    }
+
+    .hero__focus-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero__focus-icon {
+      display: grid;
+      width: 2.5rem;
+      height: 2.5rem;
+      place-items: center;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      color: var(--cyan-300);
+    }
+
+    .hero__focus-icon svg {
+      width: 2.15rem;
+      height: 2.15rem;
+    }
+
+    .hero__focus-name {
+      color: var(--white);
+      font-size: clamp(0.75rem, 1vw, 0.86rem);
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .action-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 3.15rem;
+      align-items: center;
+      justify-content: center;
+      gap: 0.62rem;
+      padding: 0.78rem 1.1rem;
+      border: 1px solid transparent;
+      border-radius: var(--radius-md);
+      font-size: 0.86rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      text-decoration: none;
+      transition: transform var(--transition-base), background var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-base), color var(--transition-fast);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button--primary {
+      background: linear-gradient(180deg, var(--cyan-300), var(--cyan-500));
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.44) inset, 0 12px 26px rgba(6, 182, 212, 0.22);
+      color: var(--navy-950);
+    }
+
+    .button--primary:hover {
+      background: linear-gradient(180deg, #a5f3fc, var(--cyan-400));
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.48) inset, 0 18px 34px rgba(6, 182, 212, 0.34);
+    }
+
+    .button--secondary {
+      border-color: var(--glass-border-2);
+      background: var(--glass-bg);
+      color: var(--white);
+    }
+
+    .button--secondary:hover {
+      border-color: var(--glass-border-hover);
+      background: var(--glass-bg-2);
+      color: var(--cyan-300);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .button__icon {
+      width: 1.05rem;
+      height: 1.05rem;
+      flex: 0 0 auto;
+    }
+
+    .hero__portrait {
+      position: relative;
+      z-index: 0;
+      width: min(100%, 34rem);
+      justify-self: center;
+      align-self: center;
+      isolation: isolate;
+    }
+
+    .hero__portrait::before {
+      position: absolute;
+      z-index: -2;
+      inset: 12% -11% -7%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.26), transparent 66%);
+      filter: blur(18px);
+      content: "";
+    }
+
+    .hero__portrait::after {
+      position: absolute;
+      z-index: -1;
+      inset: 1.15rem -1.25rem -1.25rem 1.25rem;
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-2xl);
+      content: "";
+    }
+
+    .portrait {
+      position: relative;
+      z-index: 1;
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      border: 1px solid var(--glass-border-2);
+      border-radius: var(--radius-2xl);
+      background: var(--navy-900);
+      box-shadow: var(--shadow-lg), var(--shadow-glow);
+    }
+
+    .portrait__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 38%;
+      filter: contrast(1.05) saturate(0.92);
+    }
+
+    .portrait__scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(2, 4, 10, 0.34), rgba(2, 4, 10, 0.03) 38%, rgba(2, 4, 10, 0.2) 100%);
+      pointer-events: none;
+    }
+
+    .portrait__caption {
+      position: absolute;
+      top: 1rem;
+      right: auto;
+      bottom: auto;
+      left: 1rem;
+      display: grid;
+      gap: 0.23rem;
+      max-width: calc(100% - 2rem);
+      padding: 0.85rem 0.95rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-md);
+      background: rgba(2, 4, 10, 0.68);
+      backdrop-filter: blur(10px);
+    }
+
+    .portrait__caption-label {
+      color: var(--cyan-300);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .portrait__caption-text {
+      color: var(--white);
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+
+    .portrait__fallback {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(34, 211, 238, 0.19), transparent 29%),
+        linear-gradient(145deg, var(--navy-800), var(--navy-950));
+      color: var(--white);
+      text-align: center;
+    }
+
+    .portrait__fallback[hidden] {
+      display: none;
+    }
+
+    .portrait__fallback-mark {
+      display: grid;
+      width: 7rem;
+      aspect-ratio: 1;
+      place-items: center;
+      border: 1px solid var(--cyan-400);
+      border-radius: 28px 5px 28px 5px;
+      color: var(--cyan-400);
+      font-size: 3.3rem;
+      font-weight: 800;
+    }
+
+    .portrait__fallback-text {
+      margin-top: 1rem;
+      color: var(--gray-300);
+      font-size: 0.85rem;
+    }
+
+    /*
+      ==========================================================================
+      Reusable cards, timeline, and skills
+      ==========================================================================
+    */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(17rem, 0.92fr);
+      gap: var(--space-lg);
+      align-items: start;
+    }
+
+    .about-copy {
+      color: var(--gray-300);
+      font-size: 1.04rem;
+      line-height: 1.82;
+    }
+
+    .about-copy p {
+      margin: 0;
+    }
+
+    .about-copy p + p {
+      margin-top: 1.25rem;
+    }
+
+    .about-copy strong {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    .about-copy .about-copy__accent {
+      color: var(--cyan-300);
+    }
+
+    .fact-panel {
+      padding: var(--space-lg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-xl);
+      background: linear-gradient(150deg, rgba(15, 23, 42, 0.85), rgba(6, 11, 20, 0.74));
+      box-shadow: var(--shadow-md);
+    }
+
+    .fact-panel__label {
+      margin: 0 0 var(--space-sm);
+      color: var(--cyan-300);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .fact-panel__title {
+      margin: 0;
+      color: var(--white);
+      font-size: 1.36rem;
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      line-height: 1.25;
+    }
+
+    .fact-list {
+      display: grid;
+      gap: 0.85rem;
+      margin: var(--space-md) 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .fact-list__item {
+      display: flex;
+      gap: 0.68rem;
+      align-items: flex-start;
+      color: var(--gray-400);
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    .fact-list__item::before {
+      width: 0.5rem;
+      height: 0.5rem;
+      flex: 0 0 auto;
+      margin-top: 0.45rem;
+      border-radius: 50%;
+      background: var(--cyan-400);
+      box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.1);
+      content: "";
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: var(--space-md);
+      max-width: 57rem;
+      margin: 0 auto;
+    }
+
+    .timeline::before {
+      position: absolute;
+      top: 1.5rem;
+      bottom: 1.5rem;
+      left: 1.03rem;
+      width: 1px;
+      background: linear-gradient(var(--cyan-500), rgba(34, 211, 238, 0.12), var(--navy-600));
+      content: "";
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 3.4rem;
+    }
+
+    .timeline-item::before {
+      position: absolute;
+      top: 1.35rem;
+      left: 0.47rem;
+      width: 1.1rem;
+      height: 1.1rem;
+      border: 3px solid var(--navy-950);
+      border-radius: 50%;
+      background: var(--cyan-400);
+      box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.54), 0 0 18px rgba(34, 211, 238, 0.38);
+      content: "";
+    }
+
+    .card {
+      height: 100%;
+      padding: 1.8rem;
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      background: var(--glass-bg);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-base), border-color var(--transition-base), background var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--glass-border-hover);
+      background: var(--glass-bg-2);
+      box-shadow: var(--shadow-glow), var(--shadow-md);
+    }
+
+    .timeline-card__date {
+      margin: 0 0 0.5rem;
+      color: var(--cyan-300);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.055em;
+    }
+
+    .timeline-card__heading {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .timeline-card__heading .timeline-card__title {
+      flex: 1 1 16rem;
+    }
+
+    .timeline-card__title,
+    .skill-card__title,
+    .leadership-card__title {
+      margin: 0;
+      color: var(--white);
+      font-size: 1.18rem;
+      font-weight: 700;
+      letter-spacing: -0.028em;
+      line-height: 1.32;
+    }
+
+    .timeline-card__badge {
+      display: inline-flex;
+      gap: 0.4rem;
+      align-items: center;
+      max-width: 100%;
+      padding: 0.35rem 0.55rem 0.35rem 0.42rem;
+      border: 1px solid var(--glass-border-2);
+      border-radius: 999px;
+      background: var(--cyan-glow);
+      color: var(--cyan-300);
+      font-size: 0.69rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .timeline-card__badge-icon {
+      display: grid;
+      width: 1.15rem;
+      height: 1.15rem;
+      flex: 0 0 auto;
+      place-items: center;
+    }
+
+    .timeline-card__badge-icon svg {
+      width: 0.9rem;
+      height: 0.9rem;
+    }
+
+    .timeline-card__organization {
+      margin: 0.35rem 0 0;
+      color: var(--gray-400);
+      font-size: 0.91rem;
+      font-weight: 500;
+    }
+
+    .timeline-card__copy,
+    .project-card__copy,
+    .leadership-card__copy {
+      margin: 0.9rem 0 0;
+      color: var(--gray-300);
+      font-size: 0.91rem;
+      line-height: 1.72;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin: 1.2rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tag {
+      padding: 0.35rem 0.56rem;
+      border: 1px solid rgba(34, 211, 238, 0.2);
+      border-radius: 999px;
+      background: rgba(6, 182, 212, 0.08);
+      color: var(--cyan-300);
+      font-size: 0.69rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .tag--muted {
+      border-color: var(--glass-border);
+      background: rgba(148, 163, 184, 0.06);
+      color: var(--gray-300);
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-md);
+    }
+
+    .skill-card--centered {
+      grid-column: 2;
+    }
+
+    .skill-card__header,
+    .leadership-card__header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+    }
+
+    .icon-tile {
+      display: grid;
+      width: 2.7rem;
+      height: 2.7rem;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: var(--radius-sm);
+      background: rgba(6, 182, 212, 0.1);
+      color: var(--cyan-300);
+    }
+
+    .icon-tile svg {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+
+    .skill-list {
+      display: grid;
+      gap: 0;
+      margin: 1.35rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skill-list__item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      padding: 0.56rem 0;
+      border-bottom: 1px solid rgba(177, 192, 209, 0.1);
+      color: var(--gray-300);
+      font-size: 0.86rem;
+      line-height: 1.45;
+    }
+
+    .skill-list__item:last-child {
+      border-bottom: 0;
+    }
+
+    .skill-list__item::before {
+      width: 0.3rem;
+      height: 0.3rem;
+      flex: 0 0 auto;
+      margin-top: 0.44rem;
+      border-radius: 50%;
+      background: var(--cyan-400);
+      content: "";
+    }
+
+    /*
+      ==========================================================================
+      Major change: project proof-of-work states and visual placeholders.
+      TODO comments precede every placeholder so they are easy to replace.
+      ==========================================================================
+    */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-md);
+    }
+
+    .project-card {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-xl);
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.82), rgba(6, 11, 20, 0.88));
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--glass-border-hover);
+      box-shadow: var(--shadow-glow), var(--shadow-md);
+    }
+
+    .project-visual {
+      position: relative;
+      display: grid;
+      min-height: 10.75rem;
+      place-items: center;
+      overflow: hidden;
+      border-bottom: 1px solid var(--glass-border);
+      background:
+        linear-gradient(rgba(177, 192, 209, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(177, 192, 209, 0.05) 1px, transparent 1px),
+        radial-gradient(circle at 50% 45%, rgba(6, 182, 212, 0.14), transparent 55%),
+        var(--navy-900);
+      background-size: 2rem 2rem, 2rem 2rem, auto, auto;
+    }
+
+    .project-visual__label {
+      position: absolute;
+      top: 0.7rem;
+      left: 0.8rem;
+      color: var(--gray-500);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.57rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .flow {
+      display: flex;
+      width: min(90%, 24rem);
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+    }
+
+    .flow__node {
+      display: grid;
+      min-width: 4.3rem;
+      min-height: 2.65rem;
+      place-items: center;
+      padding: 0.35rem;
+      border: 1px solid rgba(103, 232, 249, 0.37);
+      border-radius: 0.6rem;
+      background: rgba(6, 182, 212, 0.1);
+      color: var(--gray-100);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.6rem;
+      font-weight: 500;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    .flow__node--emphasis {
+      border-color: var(--cyan-400);
+      background: rgba(6, 182, 212, 0.18);
+      color: var(--white);
+      box-shadow: 0 0 28px rgba(6, 182, 212, 0.18);
+    }
+
+    .flow__connector {
+      position: relative;
+      width: 1.35rem;
+      height: 1px;
+      flex: 0 1 1.35rem;
+      background: var(--cyan-400);
+      opacity: 0.75;
+    }
+
+    .flow__connector::after {
+      position: absolute;
+      top: -0.18rem;
+      right: -0.02rem;
+      width: 0.38rem;
+      height: 0.38rem;
+      border-top: 1px solid var(--cyan-400);
+      border-right: 1px solid var(--cyan-400);
+      transform: rotate(45deg);
+      content: "";
+    }
+
+    .project-card__body {
+      display: flex;
+      height: 100%;
+      flex: 1;
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+
+    .project-card__meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.7rem;
+      margin-bottom: 0.95rem;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.55rem;
+      border-radius: 999px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.61rem;
+      font-weight: 500;
+      letter-spacing: 0.035em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .status::before {
+      width: 0.36rem;
+      height: 0.36rem;
+      border-radius: 50%;
+      background: currentColor;
+      content: "";
+    }
+
+    .status--research {
+      border: 1px solid rgba(250, 204, 21, 0.25);
+      background: rgba(250, 204, 21, 0.08);
+      color: #fde047;
+    }
+
+    .status--complete {
+      border: 1px solid rgba(74, 222, 128, 0.25);
+      background: rgba(74, 222, 128, 0.08);
+      color: #86efac;
+    }
+
+    .status--ongoing {
+      border: 1px solid rgba(34, 211, 238, 0.25);
+      background: rgba(34, 211, 238, 0.08);
+      color: var(--cyan-300);
+    }
+
+    .project-card__year {
+      color: var(--gray-500);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+    }
+
+    .project-card__plain-language {
+      order: 0;
+      margin: 0 0 0.55rem;
+      color: var(--cyan-300);
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .project-card__title {
+      order: 1;
+      margin: 0;
+      color: var(--white);
+      font-size: 1.48rem;
+      font-weight: 800;
+      letter-spacing: -0.043em;
+      line-height: 1.1;
+    }
+
+    .project-card__subtitle {
+      order: 2;
+      margin: 0.45rem 0 0;
+      color: var(--gray-400);
+      font-size: 0.79rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .project-card__sections {
+      display: grid;
+      gap: 0.9rem;
+      margin-top: 1.2rem;
+    }
+
+    .project-card__label {
+      margin: 0;
+      color: var(--gray-500);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.61rem;
+      font-weight: 500;
+      letter-spacing: 0.095em;
+      text-transform: uppercase;
+    }
+
+    .project-card__copy {
+      margin-top: 0.28rem;
+    }
+
+    .project-card__footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 1.2rem;
+    }
+
+    .project-proof {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.38rem;
+      padding: 0.42rem 0.58rem;
+      border: 1px solid var(--glass-border-2);
+      border-radius: 999px;
+      background: rgba(148, 163, 184, 0.07);
+      color: var(--gray-300);
+      font-size: 0.69rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .project-proof svg {
+      width: 0.85rem;
+      height: 0.85rem;
+      color: var(--cyan-300);
+    }
+
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-md);
+    }
+
+    .leadership-card__organization {
+      margin: 0.25rem 0 0;
+      color: var(--cyan-300);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .contact-card {
+      position: relative;
+      display: flex;
+      min-height: 12.75rem;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 1.5rem;
+      overflow: hidden;
+      border-color: rgba(103, 232, 249, 0.15);
+      color: inherit;
+      text-align: left;
+      text-decoration: none;
+      transition: transform var(--transition-base), border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-base), color var(--transition-fast);
+    }
+
+    .contact-card::after {
+      position: absolute;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      color: rgba(103, 232, 249, 0.56);
+      content: "↗";
+      font-size: 1.15rem;
+      line-height: 1;
+      transition: transform var(--transition-base), color var(--transition-fast);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-0.25rem);
+      border-color: rgba(34, 211, 238, 0.62);
+      background: rgba(15, 23, 42, 0.92);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25), 0 0 24px rgba(6, 182, 212, 0.13);
+    }
+
+    .contact-card:hover::after {
+      color: var(--cyan-300);
+      transform: translate(0.15rem, -0.15rem);
+    }
+
+    .contact-card__icon {
+      display: grid;
+      width: 3rem;
+      height: 3rem;
+      place-items: center;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(103, 232, 249, 0.15);
+      background: rgba(6, 182, 212, 0.1);
+      color: var(--cyan-300);
+      transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-base);
+    }
+
+    .contact-card:hover .contact-card__icon {
+      border-color: rgba(103, 232, 249, 0.48);
+      background: rgba(6, 182, 212, 0.17);
+      transform: scale(1.05);
+    }
+
+    .contact-card__icon svg {
+      width: 1.45rem;
+      height: 1.45rem;
+    }
+
+    .contact-card__title {
+      margin: 1rem 0 0;
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: 700;
+      transition: color var(--transition-fast);
+    }
+
+    .contact-card:hover .contact-card__title {
+      color: var(--cyan-300);
+    }
+
+    .contact-card__detail {
+      margin: 0.28rem 0 0;
+      color: var(--gray-400);
+      font-size: 0.79rem;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+
+    .footer {
+      border-top: 1px solid var(--hairline);
+      background: var(--carbon);
+    }
+
+    .footer__inner {
+      display: flex;
+      min-height: 7.8rem;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      padding-block: var(--space-md);
+    }
+
+    .footer__note {
+      margin: 0;
+      color: var(--gray-500);
+      font-size: 0.78rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .footer__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 1rem;
+    }
+
+    .footer__link {
+      color: var(--gray-400);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    .footer__link:hover {
+      color: var(--cyan-300);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(1.5rem);
+      transition: opacity 520ms var(--ease-premium), transform 520ms var(--ease-premium);
+    }
+
+    .reveal--visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1050px) {
+      .hero__layout,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero__copy {
+        max-width: 44rem;
+      }
+
+      .hero__portrait {
+        width: min(100%, 22rem);
+      }
+
+      .skill-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .skill-card--centered {
+        grid-column: 1 / -1;
+        width: calc((100% - var(--space-md)) / 2);
+        justify-self: center;
+      }
+    }
+
+    @media (max-width: 840px) {
+      .nav__toggle {
+        display: inline-flex;
+      }
+
+      .nav__links {
+        position: absolute;
+        top: calc(100% - 0.4rem);
+        right: 1rem;
+        left: 1rem;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.65rem;
+        border: 1px solid var(--glass-border-2);
+        border-radius: var(--radius-md);
+        background: rgba(2, 4, 10, 0.96);
+        box-shadow: var(--shadow-lg);
+        backdrop-filter: blur(20px);
+      }
+
+      .nav__links--open {
+        display: flex;
+      }
+
+      .nav__link {
+        justify-content: center;
+        padding: 0.76rem;
+      }
+
+      .project-grid,
+      .leadership-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(var(--container), calc(100% - 2rem));
+      }
+
+      .section {
+        padding-block: 4.25rem;
+      }
+
+      .section-heading {
+        margin-bottom: 2.35rem;
+      }
+
+      .nav {
+        min-height: 4.6rem;
+      }
+
+      .brand__descriptor {
+        display: none;
+      }
+
+      .hero__layout {
+        gap: 2rem;
+        padding-block: 3.25rem;
+      }
+
+      .hero__title {
+        font-size: clamp(3rem, 16vw, 4.35rem);
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .action-group {
+        display: grid;
+      }
+
+      .hero__portrait {
+        width: min(100%, 18rem);
+      }
+
+      .hero__core {
+        margin-bottom: 1.65rem;
+      }
+
+      .hero__focus-list {
+        grid-template-columns: 1fr;
+      }
+
+      .hero__focus-item {
+        min-height: 5.25rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.85rem;
+        padding: 0.78rem 1rem;
+      }
+
+      .hero__focus-top {
+        gap: 0.7rem;
+      }
+
+      .hero__focus-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+
+      .hero__focus-icon svg {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      .hero__focus-name {
+        font-size: 0.8rem;
+        text-align: left;
+      }
+
+      .timeline::before {
+        left: 0.76rem;
+      }
+
+      .timeline-item {
+        padding-left: 2.6rem;
+      }
+
+      .timeline-item::before {
+        left: 0.2rem;
+      }
+
+      .card,
+      .project-card__body {
+        padding: 1.2rem;
+      }
+
+      .skill-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skill-card--centered {
+        grid-column: auto;
+        width: 100%;
+      }
+
+      .contact-card {
+        min-height: 10.5rem;
+      }
+
+      .flow {
+        gap: 0.23rem;
+      }
+
+      .flow__node {
+        min-width: 3.7rem;
+        font-size: 0.53rem;
+      }
+
+      .flow__connector {
+        width: 0.75rem;
+      }
+
+      .footer__inner {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .footer__links {
+        justify-content: center;
+      }
+    }
+
+    @media (hover: none), (pointer: coarse) {
+      .card:hover,
+      .project-card:hover,
+      .button:hover {
+        transform: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Major change: keyboard users can bypass repeated navigation. -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="site-loader__mark">Y.</div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#hero" aria-label="Yahia Ibrahim home">
+        <span class="brand__mark" aria-hidden="true">Y</span>
+        <span>
+          <span class="brand__name">Yahia Ibrahim</span>
+          <span class="brand__descriptor">Networks · Security</span>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false">
+        <span class="nav__toggle-icon" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#experience">Education &amp; Achievements</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Major change: hero has a clear contact conversion action and stable image dimensions. -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container hero__layout">
+        <div class="hero__copy reveal">
+          <p class="hero__availability">Open to internships &amp; opportunities</p>
+          <h1 class="hero__title" id="hero-title">Yahia <span class="hero__title-accent">Ibrahim</span></h1>
+          <p class="hero__summary">Networks &amp; Cybersecurity student building practical solutions with AI, automation, and IoT — turning ideas into real-world impact.With a long-term focus on AI network engineering, I’m preparing to design intelligent, self-optimizing network systems.</p>
+          <div class="hero__core">
+            <p class="hero__core-heading">
+              <span class="hero__core-line hero__core-line--left" aria-hidden="true"></span>
+              <span>My Core</span>
+              <span class="hero__core-line hero__core-line--right" aria-hidden="true"></span>
+            </p>
+            <ul class="hero__focus-list" aria-label="Core focus areas">
+              <li class="hero__focus-item">
+                <div class="hero__focus-top">
+                  <span class="hero__focus-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9.5" y="2.5" width="5" height="5" rx="1"/><rect x="2.5" y="16.5" width="5" height="5" rx="1"/><rect x="9.5" y="16.5" width="5" height="5" rx="1"/><rect x="16.5" y="16.5" width="5" height="5" rx="1"/><path d="M12 7.5v4.5M5 12h14M5 12v4.5M12 12v4.5M19 12v4.5"/></svg></span>
+                </div>
+                <span class="hero__focus-name">Network</span>
+              </li>
+              <li class="hero__focus-item">
+                <div class="hero__focus-top">
+                  <span class="hero__focus-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 5 5.7v5.1c0 4.5 2.9 8.7 7 10.7 4.1-2 7-6.2 7-10.7V5.7L12 2.5Z"/><rect x="8.5" y="11" width="7" height="5.5" rx="1"/><path d="M10.25 11V9.8a1.75 1.75 0 0 1 3.5 0V11"/></svg></span>
+                </div>
+                <span class="hero__focus-name">Cybersecurity</span>
+              </li>
+              <li class="hero__focus-item">
+                <div class="hero__focus-top">
+                  <span class="hero__focus-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1.4"/><path d="M9.5 3.5v3M14.5 3.5v3M9.5 17.5v3M14.5 17.5v3M3.5 9.5h3M3.5 14.5h3M17.5 9.5h3M17.5 14.5h3M10 10h4v4h-4z"/></svg></span>
+                </div>
+                <span class="hero__focus-name">AI &amp; Automation</span>
+              </li>
+            </ul>
+          </div>
+          <div class="action-group">
+            <a class="button button--primary" href="#contact">
+              <svg class="button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg>
+              Contact me
+            </a>
+            <a class="button button--secondary" href="#projects">
+              View projects
+              <svg class="button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__portrait reveal">
+          <figure class="portrait">
+            <img class="portrait__image" id="heroPortrait" src="yahya-we-shine-award.jpg" width="1152" height="1536" alt="Yahia Ibrahim at a WE Shine event in Banha, Egypt" fetchpriority="high" decoding="async">
+            <div class="portrait__scrim" aria-hidden="true"></div>
+            <figcaption class="portrait__caption">
+              <span class="portrait__caption-label">Networks &amp; Cybersecurity</span>
+              <span class="portrait__caption-text">Banha, Qalyubia, Egypt</span>
+            </figcaption>
+            <div class="portrait__fallback" id="portraitFallback" hidden>
+              <div>
+                <div class="portrait__fallback-mark" aria-hidden="true">Y.</div>
+                <p class="portrait__fallback-text">Yahia Ibrahim<br>Networks &amp; Cybersecurity</p>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" id="about" aria-labelledby="about-title">
+      <div class="section__rule"></div>
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-heading__eyebrow">About</p>
+          <h2 class="section-heading__title" id="about-title">Driven by curiosity,<br><span class="section-heading__accent">defined by discipline.</span></h2>
+          <p class="section-heading__description">A student in networking and cybersecurity, I aspire to build a career in intelligent infrastructure. At 17, I have a clear, long-term vision for my studies and projects.</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>Networks and Cybersecurity student at <strong>WE School for Applied Technology</strong> in Toukh, Qalyubia, currently in my second year of a three-year technical track. My academic journey is guided by disciplined study and a practical focus on technical growth.</p>
+            <p>My technical foundation spans networking, Linux administration, Python programming, embedded IoT systems, and cybersecurity fundamentals. I’m working toward becoming an <strong>AI Network Engineer</strong> — combining AI with network engineering to build smarter, self-optimizing, and secure infrastructure.</p>
+            <p>I take on leadership roles — I lead student projects, help peers with technical study sessions, and serve as a student leader at my school. I’ve also volunteered for over six years with <strong>Aelaty Association</strong>.</p>
+          </div>
+
+          <aside class="fact-panel reveal" aria-label="Profile at a glance">
+            <p class="fact-panel__label">Profile at a glance</p>
+            <h3 class="fact-panel__title">Focused technical growth and leadership.</h3>
+            <ul class="fact-list">
+              <li class="fact-list__item">Networks &amp; Cybersecurity — 2nd year, 3-year technical track</li>
+              <li class="fact-list__item">Core skills: Networking, Linux, Python, IoT, Cybersecurity fundamentals</li>
+              <li class="fact-list__item">Leadership: project lead, student leader, 6+ years volunteering</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" id="skills" aria-labelledby="skills-title">
+      <div class="section__rule"></div>
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-heading__eyebrow">Technical toolkit</p>
+          <h2 class="section-heading__title" id="skills-title">Skills &amp; <span class="section-heading__accent">expertise.</span></h2>
+        </header>
+
+        <div class="skill-grid">
+          <article class="card skill-card reveal">
+            <div class="skill-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="2.5" y="3" width="19" height="7" rx="2"/><rect x="2.5" y="14" width="19" height="7" rx="2"/><path d="M6 6.5h.01M6 17.5h.01"/></svg></span>
+              <h3 class="skill-card__title">Networking Fundamentals</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-list__item">IP Addressing &amp; Subnetting</li>
+              <li class="skill-list__item">Network Topologies &amp; Types (LAN, WAN, PAN)</li>
+              <li class="skill-list__item">OSI Model &amp; TCP/IP Protocols</li>
+              <li class="skill-list__item">Network Services (VLANs, DNS, DHCP)</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8 5.4 5.7v5.1c0 4.3 2.8 8.3 6.6 10.4 3.8-2.1 6.6-6.1 6.6-10.4V5.7L12 2.8Z"/><rect x="8.6" y="11.2" width="6.8" height="5.3" rx="1"/><path d="M10.3 11.2v-1.3a1.7 1.7 0 0 1 3.4 0v1.3"/></svg></span>
+              <h3 class="skill-card__title">Security &amp; Systems Administration</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-list__item">Cisco Routing &amp; Switching (Packet Tracer)</li>
+              <li class="skill-list__item">Linux CLI &amp; Administration</li>
+              <li class="skill-list__item">Vulnerability Assessment &amp; Threat Analysis</li>
+              <li class="skill-list__item">Endpoint &amp; Network Security (Firewalls, IDS/IPS)</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8h8v8H8z"/><path d="M4 10h4M16 10h4M4 14h4M16 14h4M10 4v4M14 4v4M10 16v4M14 16v4"/></svg></span>
+              <h3 class="skill-card__title">Programming &amp; Development</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-list__item">Python</li>
+              <li class="skill-list__item">HTML</li>
+              <li class="skill-list__item">CSS</li>
+              <li class="skill-list__item">Git &amp; GitHub</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M18 10h-1.3A7.7 7.7 0 1 0 9 19.7h9a4.9 4.9 0 0 0 0-9.7Z"/></svg></span>
+              <h3 class="skill-card__title">Hardware &amp; IoT</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-list__item">ESP32 Microcontrollers</li>
+              <li class="skill-list__item">Wi-Fi Direct (P2P)</li>
+              <li class="skill-list__item">Wireless Signal Analysis</li>
+              <li class="skill-list__item">Embedded Systems Design</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 5h16v14H4z"/><path d="m7 9 2 2-2 2M12 15h5"/></svg></span>
+              <h3 class="skill-card__title">Languages</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-list__item">Arabic — Native</li>
+              <li class="skill-list__item">English — Intermediate (B1/B2)</li>
+              <li class="skill-list__item">IT-Specialized English</li>
+              <li class="skill-list__item">Technical Documentation</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a7 7 0 0 1 14 0v2M16 3.5a4 4 0 0 1 0 7M22 21v-2a6.7 6.7 0 0 0-3.5-5.9"/></svg></span>
+              <h3 class="skill-card__title">Leadership &amp; Professional Skills</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-list__item">Technical Team Leadership</li>
+              <li class="skill-list__item">Peer Mentoring &amp; Technical Training</li>
+              <li class="skill-list__item">Analytical &amp; Critical Problem-Solving</li>
+              <li class="skill-list__item">Project &amp; Time Management</li>
+              <li class="skill-list__item">Technical Presentation &amp; Communication</li>
+              <li class="skill-list__item">Research &amp; Technical Documentation</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card skill-card--centered reveal">
+            <div class="skill-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.7 2.4 4 5.4 4 9s-1.3 6.6-4 9c-2.7-2.4-4-5.4-4-9s1.3-6.6 4-9Z"/></svg></span>
+              <h3 class="skill-card__title">Interests</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-list__item">Network Automation &amp; Programmability</li>
+              <li class="skill-list__item">Cloud &amp; Network Security</li>
+              <li class="skill-list__item">IoT / Edge Computing</li>
+              <li class="skill-list__item">Privacy-Preserving Systems</li>
+              <li class="skill-list__item">AI-Driven Network Infrastructure</li>
+              <li class="skill-list__item">Emerging Security Trends</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--deep" id="projects" aria-labelledby="projects-title">
+      <div class="section__rule"></div>
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-heading__eyebrow">Case studies</p>
+          <h2 class="section-heading__title" id="projects-title">Where research meets <span class="section-heading__accent">engineering.</span></h2>
+          <p class="section-heading__description">A collection of independent research and technical assignments spanning IoT privacy, secure offline communication, AI-powered threat detection, and network security assessment. Each project was built to solve a real technical challenge — not follow a tutorial.</p>
+        </header>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <!-- TODO: replace with a real AuraNet screenshot, architecture diagram, or prototype image. -->
+            <div class="project-visual" role="img" aria-label="Illustrative AuraNet flow from Wi-Fi signal to motion estimate">
+              <span class="project-visual__label">Illustrative system flow</span>
+              <div class="flow" aria-hidden="true">
+                <span class="flow__node">Wi-Fi<br>signal</span><span class="flow__connector"></span><span class="flow__node flow__node--emphasis">signal<br>change</span><span class="flow__connector"></span><span class="flow__node">motion<br>estimate</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="status status--ongoing">Research complete · implementation in progress</span>
+                <span class="project-card__year">2026</span>
+              </div>
+              <p class="project-card__plain-language">A privacy-preserving Wi-Fi motion-detection research project.</p>
+              <h3 class="project-card__title">AuraNet</h3>
+              <p class="project-card__subtitle">Team Lead · 2-Person Team · Privacy-Preserving IoT</p>
+              <div class="project-card__sections">
+                <div>
+                  <p class="project-card__label">Challenge</p>
+                  <p class="project-card__copy">Design a motion detection system that preserves user privacy while providing accurate occupancy data using commodity Wi-Fi hardware.</p>
+                </div>
+                <div>
+                  <p class="project-card__label">Approach</p>
+                  <p class="project-card__copy">Leverage ESP32 microcontrollers to analyze Wi-Fi signal attenuation patterns. No cameras or invasive sensors — purely signal-based detection.</p>
+                </div>
+                <div>
+                  <p class="project-card__label">Status</p>
+                  <p class="project-card__copy">Research phase completed and implementation is now underway. Positioned for international STEM competition entry.</p>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <ul class="tag-list" aria-label="AuraNet technologies">
+                  <li class="tag tag--muted">ESP32</li><li class="tag tag--muted">Embedded C++</li><li class="tag tag--muted">Wireless Networks</li><li class="tag tag--muted">Signal Analysis</li>
+                </ul>
+                <span class="project-proof" aria-label="Project availability: Private, available on request"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Private / on request</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <!-- TODO: replace with a real BluFi screenshot, architecture diagram, or prototype image. -->
+            <div class="project-visual" role="img" aria-label="Illustrative BluFi flow between two devices using Wi-Fi Direct">
+              <span class="project-visual__label">Illustrative system flow</span>
+              <div class="flow" aria-hidden="true">
+                <span class="flow__node">device<br>A</span><span class="flow__connector"></span><span class="flow__node flow__node--emphasis">Wi-Fi<br>Direct</span><span class="flow__connector"></span><span class="flow__node">device<br>B</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="status status--ongoing">Research complete · implementation in progress</span>
+                <span class="project-card__year">2026</span>
+              </div>
+              <p class="project-card__plain-language">An offline peer-to-peer local messaging research project.</p>
+              <h3 class="project-card__title">BluFi <span aria-label="also called">(<span aria-hidden="true">Mesh Secure</span>)</span></h3>
+              <p class="project-card__subtitle">Team Lead · 2-Person Team · P2P Communication</p>
+              <div class="project-card__sections">
+                <div>
+                  <p class="project-card__label">Challenge</p>
+                  <p class="project-card__copy">Create a communication system that works entirely offline — no internet, no cloud, no central servers — for secure local messaging.</p>
+                </div>
+                <div>
+                  <p class="project-card__label">Approach</p>
+                  <p class="project-card__copy">Researched Wi-Fi Direct P2P protocol, cryptographic signature verification, and local SQLite database architecture for tamper-proof storage.</p>
+                </div>
+                <div>
+                  <p class="project-card__label">Lessons learned</p>
+                  <p class="project-card__copy">Gained deep understanding of P2P protocols, Android networking APIs, and cryptographic implementation challenges in mobile environments.</p>
+                </div>
+                <div>
+                  <p class="project-card__label">Current status</p>
+                  <p class="project-card__copy">Research is complete and implementation is now in progress.</p>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <ul class="tag-list" aria-label="BluFi technologies">
+                  <li class="tag tag--muted">Kotlin</li><li class="tag tag--muted">Android SDK</li><li class="tag tag--muted">SQLite</li><li class="tag tag--muted">Wi-Fi Direct</li><li class="tag tag--muted">Cryptography</li>
+                </ul>
+                <span class="project-proof" aria-label="Project availability: Private, available on request"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Private / on request</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <!-- REVIEW: The source's "AI-powered", "AI/ML integration", and "AI/ML" claims below are retained for owner review. Confirm a trained ML model is actually used before publishing those labels; the supplied detail otherwise only establishes a Streamlit console, dashboards, and threat-detection algorithms. -->
+            <!-- TODO: replace with a real SentinelGuard X dashboard screenshot or architecture diagram. -->
+            <div class="project-visual" role="img" aria-label="Illustrative SentinelGuard X flow from network events to alert review">
+              <span class="project-visual__label">Illustrative monitoring flow</span>
+              <div class="flow" aria-hidden="true">
+                <span class="flow__node">network<br>events</span><span class="flow__connector"></span><span class="flow__node flow__node--emphasis">detection</span><span class="flow__connector"></span><span class="flow__node">alert<br>review</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="status status--complete">Completed</span>
+                <span class="project-card__year">2026</span>
+              </div>
+              <p class="project-card__plain-language">A Streamlit console for network intrusion monitoring and threat analysis.</p>
+              <h3 class="project-card__title">SentinelGuard X</h3>
+              <p class="project-card__subtitle">Team Lead · 4-Person Team · AI-Powered Security</p>
+              <div class="project-card__sections">
+                <div>
+                  <p class="project-card__label">Overview</p>
+                  <p class="project-card__copy">An AI-powered network intrusion detection platform with a Streamlit-based console for real-time monitoring and threat analysis.</p>
+                </div>
+                <div>
+                  <p class="project-card__label">Solution</p>
+                  <p class="project-card__copy">Built a comprehensive console with real-time dashboards, threat detection algorithms, and a professional presentation deck.</p>
+                </div>
+                <div>
+                  <p class="project-card__label">Key learnings</p>
+                  <p class="project-card__copy">Understanding of AI/ML integration in security contexts, Streamlit UI development, and professional technical presentation design.</p>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <ul class="tag-list" aria-label="SentinelGuard X technologies">
+                  <li class="tag tag--muted">Python</li><li class="tag tag--muted">Streamlit</li><li class="tag tag--muted">AI/ML</li><li class="tag tag--muted">Network Security</li>
+                </ul>
+                <span class="project-proof" aria-label="Project availability: Private, available on request"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Private / on request</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <!-- TODO: replace with a real Protocol Y document screenshot, diagram, or assessment artifact. -->
+            <div class="project-visual" role="img" aria-label="Illustrative Protocol Y flow from fictional NimbusCart to security assessment and technical report">
+              <span class="project-visual__label">Illustrative assessment flow</span>
+              <div class="flow" aria-hidden="true">
+                <span class="flow__node">Nimbus<br>Cart</span><span class="flow__connector"></span><span class="flow__node flow__node--emphasis">security<br>assessment</span><span class="flow__connector"></span><span class="flow__node">technical<br>report</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="status status--complete">Completed</span>
+                <span class="project-card__year">2026</span>
+              </div>
+              <p class="project-card__plain-language">A fictional-company cybersecurity assessment assignment.</p>
+              <h3 class="project-card__title">Protocol Y</h3>
+              <p class="project-card__subtitle">Academic Assignment · WE School</p>
+              <div class="project-card__sections">
+                <div>
+                  <p class="project-card__label">Overview</p>
+                  <p class="project-card__copy">A comprehensive cybersecurity analysis assignment built around a fictional company “NimbusCart” — covering full security assessment.</p>
+                </div>
+                <div>
+                  <p class="project-card__label">Scope</p>
+                  <p class="project-card__copy">Vulnerability analysis, Linux command execution, firewall rule configuration, and social engineering research. Delivered as a professionally formatted technical document.</p>
+                </div>
+                <div>
+                  <p class="project-card__label">Key learnings</p>
+                  <p class="project-card__copy">Practical application of security frameworks, professional technical writing, and structured vulnerability assessment methodology.</p>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <ul class="tag-list" aria-label="Protocol Y technologies">
+                  <li class="tag tag--muted">Linux</li><li class="tag tag--muted">Firewall Rules</li><li class="tag tag--muted">Vulnerability Analysis</li><li class="tag tag--muted">Social Engineering</li>
+                </ul>
+                <span class="project-proof" aria-label="Project availability: Private, available on request"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Private / on request</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" id="experience" aria-labelledby="experience-title">
+      <div class="section__rule section__rule--cyan"></div>
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-heading__eyebrow">Education &amp; achievements</p>
+          <h2 class="section-heading__title" id="experience-title">Academic growth,<br><span class="section-heading__accent">recognized in practice.</span></h2>
+          <p class="section-heading__description">A focused journey through technical education, hands-on training, and the milestones earned along the way.</p>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="card timeline-card">
+              <p class="timeline-card__date">2024 — 2027 (Expected)</p>
+              <div class="timeline-card__heading">
+                <h3 class="timeline-card__title">Diploma in Networks &amp; Cybersecurity</h3>
+                <span class="timeline-card__badge"><span class="timeline-card__badge-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m8.4 13 1.2 8L12 19l2.4 2 1.2-8"/></svg></span>2nd Rank School-Wide · 99%+ Average · Excellent Conduct</span>
+              </div>
+              <p class="timeline-card__organization">WE School for Applied Technology — Toukh, Qalyubia, Egypt</p>
+              <p class="timeline-card__copy">A three-year technical/vocational secondary program in telecommunications and information technology. Year 1 established a solid foundation in Python programming, networking fundamentals, and core IT concepts. I’ve since advanced into Year 2’s Networks &amp; Cybersecurity specialization track.</p>
+              <ul class="tag-list" aria-label="Diploma subjects">
+                <li class="tag">Routing &amp; Switching (Coursework)</li>
+                <li class="tag">Linux Administration</li>
+                <li class="tag">Network Defense</li>
+                <li class="tag">Python</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="card timeline-card">
+              <p class="timeline-card__date">2026</p>
+              <div class="timeline-card__heading">
+                <h3 class="timeline-card__title">Level 3 — Networks &amp; Information Security</h3>
+                <span class="timeline-card__badge"><span class="timeline-card__badge-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16.5 8"/></svg></span>Completed 4 Progressive Levels (Lite 1 → Level 3) · 390+ Training Hours</span>
+              </div>
+              <p class="timeline-card__organization">Digital Egypt Cubs Initiative (DECI)</p>
+              <p class="timeline-card__copy">A multi-year, multi-level nanodegree program progressing through Lite 1, Level 1, Level 2, and Level 3 in Networks &amp; Information Security. Each 4-month level combined weekly live online lectures, self-paced study on the iSchool platform, monthly hands-on practical sessions at a training center, and a 5-day intensive soft-skills bootcamp.</p>
+              <ul class="tag-list" aria-label="DECI topics">
+                <li class="tag">Network Security</li>
+                <li class="tag">Information Security</li>
+                <li class="tag">Multi-Level Nanodegree</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="card timeline-card">
+              <p class="timeline-card__date">August 2026</p>
+              <div class="timeline-card__heading">
+                <h3 class="timeline-card__title">Cybersecurity Superhero Academy</h3>
+                <span class="timeline-card__badge"><span class="timeline-card__badge-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l4 4v16H6z"/><path d="M15 2v5h4M9 12h6M9 16h6"/></svg></span>Certificate · Aug 1, 2026</span>
+              </div>
+              <p class="timeline-card__organization">National Telecommunications Institute (NTI) — Creativa Hub Banha</p>
+              <p class="timeline-card__copy">Intensive 5-day in-person training program (7 hours/day) covering cybersecurity and networking fundamentals. Strengthened communication, self-confidence, stress handling, and presentation skills.</p>
+              <ul class="tag-list" aria-label="NTI training topics">
+                <li class="tag">Cybersecurity Fundamentals</li>
+                <li class="tag">Networking</li>
+                <li class="tag">Presentation Skills</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="card timeline-card">
+              <p class="timeline-card__date">Ongoing</p>
+              <h3 class="timeline-card__title">Cisco Networking Academy</h3>
+              <p class="timeline-card__organization">Online Learning Platform</p>
+              <p class="timeline-card__copy">Completed courses in networking, cybersecurity, and AI: Get Connected, Cyber Threat Management, Endpoint Security, AI Fundamentals (with IBM SkillsBuild), and English for IT 1. Currently preparing for the CCNA Routing &amp; Switching certification exam.</p>
+              <ul class="tag-list" aria-label="Cisco Networking Academy topics">
+                <li class="tag">Cisco NetAcad</li>
+                <li class="tag">CCNA Prep</li>
+                <li class="tag">IBM SkillsBuild</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="card timeline-card">
+              <p class="timeline-card__date">Jan – Feb 2026</p>
+              <h3 class="timeline-card__title">Huawei ICT Academy</h3>
+              <p class="timeline-card__organization">Online Certifications — Huawei Talent Platform</p>
+              <p class="timeline-card__copy">Completed five certifications spanning cloud computing, artificial intelligence, data management, and programming: Cloud Computing Fundamentals, Overview of AI, Python Programming Basics, Data Management &amp; Analytics, and Data Management &amp; Analysis (CRA Training Program).</p>
+              <ul class="tag-list" aria-label="Huawei ICT Academy topics">
+                <li class="tag">Cloud Computing</li>
+                <li class="tag">AI Fundamentals</li>
+                <li class="tag">Data Management &amp; Analytics</li>
+                <li class="tag">Python</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--deep" id="leadership" aria-labelledby="leadership-title">
+      <div class="section__rule section__rule--cyan"></div>
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-heading__eyebrow">Impact</p>
+          <h2 class="section-heading__title" id="leadership-title">Leadership &amp; <span class="section-heading__accent">volunteer work.</span></h2>
+          <p class="section-heading__description">Leading by example, serving the community, and empowering peers.</p>
+        </header>
+
+        <div class="leadership-grid">
+          <article class="card leadership-card reveal">
+            <div class="leadership-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a7 7 0 0 1 14 0v2M16 3.5a4 4 0 0 1 0 7M22 21v-2a6.7 6.7 0 0 0-3.5-5.9"/></svg></span>
+              <div><h3 class="leadership-card__title">Student Leader</h3><p class="leadership-card__organization">WE School for Applied Technology</p></div>
+            </div>
+            <p class="leadership-card__copy">Leads student teams and coordinates technical initiatives at school.</p>
+          </article>
+
+          <article class="card leadership-card reveal">
+            <div class="leadership-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="m14.5 6.5 3 3M4 20l5.8-5.8M14.2 4.2a5 5 0 0 1 6.6 6.6l-3.1 3.1a5 5 0 0 1-6.6-6.6zM9.8 14.2a5 5 0 0 1-6.6 6.6l3.1-3.1a5 5 0 0 1 3.5-3.5z"/></svg></span>
+              <div><h3 class="leadership-card__title">Project Team Lead</h3><p class="leadership-card__organization">AuraNet · BluFi · SentinelGuard X (see Projects)</p></div>
+            </div>
+            <p class="leadership-card__copy">Led three student research &amp; development teams from direction to delivery.</p>
+          </article>
+
+          <article class="card leadership-card reveal">
+            <div class="leadership-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H3zM21 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg></span>
+              <div><h3 class="leadership-card__title">Peer Educator</h3><p class="leadership-card__organization">Linux/Bash Fundamentals</p></div>
+            </div>
+            <p class="leadership-card__copy">Led a peer study session and created original technical reference guides.</p>
+          </article>
+
+          <article class="card leadership-card reveal">
+            <div class="leadership-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.9-8.6a5.5 5.5 0 0 0-.1-7.8Z"/></svg></span>
+              <div><h3 class="leadership-card__title">Charity Volunteer</h3><p class="leadership-card__organization">Aelaty Association</p></div>
+            </div>
+            <p class="leadership-card__copy">6+ years of community service, including Ramadan aid coordination.</p>
+          </article>
+
+          <article class="card leadership-card reveal">
+            <div class="leadership-card__header">
+              <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7L12 3Z"/><path d="M4 20h16"/></svg></span>
+              <div><h3 class="leadership-card__title">Volunteer — ECPC</h3><p class="leadership-card__organization">Egyptian Collegiate Programming Contest</p></div>
+            </div>
+            <p class="leadership-card__copy">On-site volunteer, 2026 edition — event logistics support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--deep" id="contact" aria-labelledby="contact-title">
+      <div class="section__rule section__rule--cyan"></div>
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-heading__eyebrow">Connect</p>
+          <h2 class="section-heading__title" id="contact-title">Connect with Me</h2>
+          <p class="section-heading__description">Open to network engineering internships, scholarship opportunities, and technical collaborations.</p>
+        </header>
+
+        <div class="contact-grid">
+          <a class="card contact-card reveal" href="mailto:2yahia.ibrahim85@gmail.com" aria-label="Send an email to Yahia Ibrahim">
+            <span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span class="contact-card__title">Email</span>
+            <span class="contact-card__detail">2yahia.ibrahim85@gmail.com</span>
+          </a>
+          <a class="card contact-card reveal" href="https://wa.me/201105035763" target="_blank" rel="noopener noreferrer" aria-label="Start a WhatsApp chat with Yahia Ibrahim">
+            <span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5 12.8 12.8 0 0 0 2.8.7A2 2 0 0 1 21 16.9Z"/></svg></span>
+            <span class="contact-card__title">WhatsApp / Phone</span>
+            <span class="contact-card__detail">+20 110 503 5763</span>
+          </a>
+          <a class="card contact-card reveal" href="https://github.com/yahiaibrahim85" target="_blank" rel="noopener noreferrer" aria-label="View Yahia Ibrahim’s GitHub profile">
+            <span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6a11.4 11.4 0 0 0-3.6 22.2c.6.1.8-.2.8-.5v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2.9-.3 2-.4 3-.4 1 0 2 .1 3 .4 2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.4 11.4 0 0 0 12 .6Z"/></svg></span>
+            <span class="contact-card__title">GitHub</span>
+            <span class="contact-card__detail">github.com/yahiaibrahim85</span>
+          </a>
+          <a class="card contact-card reveal" href="https://www.linkedin.com/in/yahia-ibrahim-2404232a9" target="_blank" rel="noopener noreferrer" aria-label="Connect with Yahia Ibrahim on LinkedIn">
+            <span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3-1.9 0-2.2 1.4-2.2 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3ZM5.3 7.4A2.1 2.1 0 1 1 5.3 3.3a2.1 2.1 0 0 1 0 4.1ZM7.1 20.5H3.6V9h3.5v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.8V1.8C24 .8 23.2 0 22.2 0Z"/></svg></span>
+            <span class="contact-card__title">LinkedIn</span>
+            <span class="contact-card__detail">Connect on LinkedIn</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand" href="#hero" aria-label="Back to top">
+        <span class="brand__mark" aria-hidden="true">Y</span>
+        <span class="brand__name">Yahia Ibrahim</span>
+      </a>
+      <p class="footer__note">Designed &amp; built with precision. All information is accurate and verified.</p>
+      <nav class="footer__links" aria-label="Footer links">
+        <a class="footer__link" href="https://github.com/yahiaibrahim85" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="footer__link" href="https://www.linkedin.com/in/yahia-ibrahim-2404232a9" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="footer__link" href="mailto:2yahia.ibrahim85@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Major change: no inline handlers or style mutations; interaction is class-based and progressive. -->
+  <script>
+    (function () {
+      "use strict";
+
+      var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var loader = document.getElementById("siteLoader");
+      var hasVisited = false;
+
+      try {
+        hasVisited = sessionStorage.getItem("yahiaPortfolioVisited") === "true";
+        sessionStorage.setItem("yahiaPortfolioVisited", "true");
+      } catch (error) {
+        hasVisited = false;
+      }
+
+      function hideLoader() {
+        if (loader) {
+          loader.classList.add("site-loader--hidden");
+        }
+      }
+
+      window.setTimeout(hideLoader, hasVisited || prefersReducedMotion ? 0 : 360);
+
+      var header = document.getElementById("siteHeader");
+      var navToggle = document.getElementById("navToggle");
+      var navLinks = document.getElementById("navLinks");
+      var navLinkItems = Array.prototype.slice.call(document.querySelectorAll(".nav__link"));
+
+      function setHeaderState() {
+        if (header) {
+          header.classList.toggle("site-header--scrolled", window.scrollY > 18);
+        }
+      }
+
+      function closeMenu() {
+        if (!navToggle || !navLinks) {
+          return;
+        }
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Open navigation menu");
+        navLinks.classList.remove("nav__links--open");
+      }
+
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", function () {
+          var isOpen = navToggle.getAttribute("aria-expanded") === "true";
+          navToggle.setAttribute("aria-expanded", String(!isOpen));
+          navToggle.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
+          navLinks.classList.toggle("nav__links--open", !isOpen);
+        });
+
+        navLinks.addEventListener("click", function (event) {
+          if (event.target.closest("a")) {
+            closeMenu();
+          }
+        });
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            closeMenu();
+          }
+        });
+      }
+
+      window.addEventListener("scroll", setHeaderState, { passive: true });
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 840) {
+          closeMenu();
+        }
+      });
+      setHeaderState();
+
+      var portrait = document.getElementById("heroPortrait");
+      var portraitFallback = document.getElementById("portraitFallback");
+      if (portrait && portraitFallback) {
+        portrait.addEventListener("error", function () {
+          portrait.hidden = true;
+          portraitFallback.hidden = false;
+        });
+      }
+
+      var revealItems = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+      if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+        revealItems.forEach(function (item) {
+          item.classList.add("reveal--visible");
+        });
+      } else {
+        var revealObserver = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("reveal--visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08, rootMargin: "0px 0px -28px" });
+
+        revealItems.forEach(function (item) {
+          revealObserver.observe(item);
+        });
+      }
+
+      if ("IntersectionObserver" in window) {
+        var sectionItems = Array.prototype.slice.call(document.querySelectorAll("main section[id]"));
+        var sectionObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) {
+              return;
+            }
+            navLinkItems.forEach(function (link) {
+              var isActive = link.getAttribute("href") === "#" + entry.target.id;
+              if (isActive) {
+                link.setAttribute("aria-current", "true");
+              } else {
+                link.removeAttribute("aria-current");
+              }
+            });
+          });
+        }, { rootMargin: "-38% 0px -55% 0px", threshold: 0 });
+
+        sectionItems.forEach(function (section) {
+          sectionObserver.observe(section);
+        });
+      }
+    }());
+  </script>
+
+  <!--
+    CHANGELOG
+    - Rebuilt the page with reusable semantic component classes; removed inline
+      style attributes and hover event handlers.
+    - Added clear contact actions, proof-of-work availability badges, and editable visual
+      placeholders to all project cards.
+    - Added stable portrait sizing, image fallback, favicon/touch icon, schema,
+      keyboard skip navigation, visible focus states, responsive grids, and
+      AA-safe muted text tokens.
+    - Replaced the 2.2 s loading delay with a 360 ms first-visit loader that is
+      skipped for repeat visits and reduced-motion users.
+    - Added visible positioning option comments and an AI/ML wording review
+      comment for SentinelGuard X; no unsupported claim was silently rewritten.
+  -->
+</body>
+</html>
